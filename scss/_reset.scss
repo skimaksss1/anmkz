@@ -1,0 +1,30 @@
+a img, :link img, :visited img {
+	border: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin:0;
+    padding: 0;
+}
+ol, ul {
+	list-style: none;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+input, button, textarea, a {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    font: inherit;
+    outline: none;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}

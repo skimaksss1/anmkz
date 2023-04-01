@@ -1,0 +1,208 @@
+@import './reset';
+@import './colors';
+@import './fonts';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'TTNorms-Regular';
+}
+header {
+    position: relative;
+}
+.appelation{
+    background-color: #000000f7;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.background_video{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 50% 50%;
+    display: block;
+}
+.s1-about_us{
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;   
+}
+.header_content{
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+}
+.content_general{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    h1{
+        font-size: 54px;
+        color: #fff;
+        font-family: 'TTNorms-extrabold';
+        line-height: 68px;
+    }
+    span{
+        color: #CFCFCF;
+        font-size: 26px;
+        display: block;
+        max-width: 700px;
+        font-family: $regular;
+        line-height: 40px;
+    }
+
+}
+.header_nav{
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &>ul{
+        
+        padding-top: 10px;
+    }
+    ul{
+        display: flex;
+        gap: 30px;
+        a{
+            font-size: 14px;
+            font-family: $bold;
+            text-transform: uppercase;
+            transition: 0.5s all ease;
+            li{
+                color: #fff;
+                transition: 0.5s all ease;
+            }
+            &:hover,  &:hover svg g{
+                color: #118BDD;
+                fill: #118BDD;
+            }
+            svg {
+                margin-left: 5px;
+                g{
+                    fill:#fff;
+                    transition: 0.5s all ease;
+                }
+            }
+        }
+        .point_menu{
+            &:hover .submenu_list{
+                display: block;
+            }
+        }
+        .submenu {
+            padding-top: 10px;
+            .submenu_list {
+                background-color: #0C0E16;
+                width: auto;
+                height: auto;
+                padding: 30px;
+                color: #fff;
+                // margin-top: 10px;
+    
+                position: absolute;
+                display: none;
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}
+.container {
+    max-width: 1380px;
+    width: 100%;
+    margin: 0 auto;
+}
+.logo img{
+    height: 35px;
+}
+.lang{
+    display: flex;
+    gap: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-family: $bold;
+    a{
+        transition: 0.5s all ease;
+        &:hover{
+            color: #118BDD;
+            font-family: $bold;
+        }
+    }
+}
+.location_info{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .location_place{
+        font-size: 16px;
+        text-align: right;
+    }
+    .location_mail{
+        font-size: 14px;
+        color: #8C94A6;
+    }
+}
+.addition{
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    z-index: 2;
+
+    .addition-card_shell{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .addition-card{
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        width: 330px;
+        .addition-icon{
+            width: 40px;
+            height: 40px;
+            img{
+                width: 100%;
+            }
+        }
+        .addition-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            height: 62px;
+            .addition-title{
+                color: #fff;
+                font-family: $black;
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
+            .addition-caption{
+                color: #C9C9C9;
+                font-family: $regular;
+                font-size: 16px;
+                line-height: 19px;
+                display: block;
+            }
+        }
+    }
+}

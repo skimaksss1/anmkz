@@ -1,0 +1,46 @@
+@font-face {
+    font-family: TTNorms-Thin;
+    src: url(../source/TTNorms-Thin.ttf);
+}
+@font-face {
+    font-family: TTNorms-ExtraLight;
+    src: url(../source/TTNorms-ExtraLight.ttf);
+}
+@font-face {
+    font-family: TTNorms-Light;
+    src: url(../source/TTNorms-Light.ttf);
+}
+@font-face {
+    font-family: TTNorms-Regular;
+    src: url(../source/TTNorms-Regular.ttf);
+}
+@font-face {
+    font-family: TTNorms-Medium;
+    src: url(../source/TTNorms-Medium.ttf);
+}
+@font-face {
+    font-family: TTNorms-Bold;
+    src: url(../source/TTNorms-Bold.ttf);
+}
+@font-face {
+    font-family: TTNorms-ExtraBold;
+    src: url(../source/TTNorms-ExtraBold.ttf);
+}
+@font-face {
+    font-family: TTNorms-Heavy;
+    src: url(../source/TTNorms-Heavy.ttf);
+}
+@font-face {
+    font-family: TTNorms-Black;
+    src: url(../source/TTNorms-Black.ttf);
+}
+
+$thin: 'TTNorms-Thin';
+$exLight: 'TTNorms-ExtraLight';
+$light: 'TTNorms-Light';
+$regular: 'TTNorms-Regular';
+$medium: 'TTNorms-Medium';
+$bold: 'TTNorms-Bold';
+$exBold: 'TTNorms-ExtraBold';
+$heavy: 'TTNorms-Heavy';
+$black: 'TTNorms-Black';
